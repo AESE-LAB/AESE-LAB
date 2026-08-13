@@ -102,8 +102,8 @@ nav.main-nav a {
   text-decoration: none;
   color: var(--ink-soft);
   font-weight: 500;
-  font-size: 0.93rem;
-  padding: 8px 11px;
+  font-size: 0.9rem;
+  padding: 8px 9px;
   border-radius: 8px;
   transition: color 0.15s, background 0.15s;
   white-space: nowrap;
