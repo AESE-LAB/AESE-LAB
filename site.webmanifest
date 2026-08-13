@@ -1,0 +1,9 @@
+{
+  "name": "AESE Lab - Jeju National University",
+  "short_name": "AESE Lab",
+  "icons": [{ "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }],
+  "theme_color": "#0e3a5d",
+  "background_color": "#ffffff",
+  "display": "browser",
+  "start_url": "index.html"
+}
