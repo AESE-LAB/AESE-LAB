@@ -43,5 +43,34 @@
         if (e.target.tagName === "A") nav.classList.remove("open");
       });
     }
+
+    // Tabs (e.g. Publications page)
+    var tabBtns = document.querySelectorAll(".tab-btn[data-tab]");
+    if (tabBtns.length) {
+      function activateTab(id, updateHash) {
+        var panel = document.getElementById("panel-" + id);
+        if (!panel) return;
+        tabBtns.forEach(function (b) {
+          b.classList.toggle("active", b.getAttribute("data-tab") === id);
+        });
+        document.querySelectorAll(".tab-panel").forEach(function (p) {
+          p.classList.toggle("active", p === panel);
+        });
+        if (updateHash && window.history && window.history.replaceState) {
+          window.history.replaceState(null, "", "#" + id);
+        }
+      }
+      tabBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          activateTab(btn.getAttribute("data-tab"), true);
+        });
+      });
+      var hash = window.location.hash.replace("#", "");
+      if (hash) activateTab(hash, false);
+      window.addEventListener("hashchange", function () {
+        var h = window.location.hash.replace("#", "");
+        if (h) activateTab(h, false);
+      });
+    }
   });
 })();

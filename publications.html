@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>연구성과 | AESE Lab - Jeju National University</title>
-<meta name="description" content="Selected publications, patents, and conference presentations of AESE Lab, Jeju National University.">
+<meta name="description" content="Publications of AESE Lab: summary, all publications, book chapters, patents, and presentations.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,35 +42,42 @@
 <div class="page-hero">
   <div class="container">
     <h1><span class="ko">연구성과</span><span class="en">Publications</span></h1>
-    <p><span class="ko">대표 논문, 특허, 학술발표 등 연구 성과를 소개합니다. 전체 논문 목록은 Google Scholar에서 확인할 수 있습니다.</span><span class="en">Selected publications, patents, and presentations. The full publication list is available on Google Scholar.</span></p>
+    <p><span class="ko">탭을 눌러 논문 요약, 전체 논문, 북챕터, 특허, 학술발표를 확인할 수 있습니다.</span><span class="en">Use the tabs to browse the publication summary, all publications, book chapters, patents, and presentations.</span></p>
   </div>
 </div>
 
-<section>
+<section style="padding-top:34px;">
   <div class="container">
-    <h2 class="section-title"><span class="ko">논문 요약</span><span class="en">Publication Summary</span></h2>
-    <div class="stats">
-      <div class="stat"><div class="num">69</div><div class="label"><span class="ko">전체 논문</span><span class="en">Total Publications</span></div></div>
-      <div class="stat"><div class="num">38</div><div class="label"><span class="ko">제1저자·교신저자 논문</span><span class="en">First/Corresponding Author</span></div></div>
-      <div class="stat"><div class="num">20</div><div class="label">H-index</div></div>
-      <div class="stat"><div class="num">1,296<small>+</small></div><div class="label"><span class="ko">피인용 횟수</span><span class="en">Citations</span></div></div>
-    </div>
-    <p style="margin-top:14px;font-size:0.8rem;color:#8aa5ba;">
-      <span class="ko">* Google Scholar 기준 (2026년 7월 기준) · 교신저자 1편, 제1저자 37편, 공저자 32편</span>
-      <span class="en">* Based on Google Scholar (as of Jul. 2026) · Corresponding author: 1, first author: 37, co-author: 32</span>
-    </p>
-    <div class="btn-row" style="margin-top:18px;">
-      <a class="btn btn-primary" href="https://scholar.google.co.kr/citations?user=AMC3wKoAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-      <a class="btn btn-outline" href="https://orcid.org/0000-0002-0017-3716" target="_blank" rel="noopener">ORCID</a>
-      <a class="btn btn-outline" href="https://www.scopus.com/authid/detail.uri?authorId=57194348573" target="_blank" rel="noopener">Scopus</a>
-    </div>
-  </div>
-</section>
 
-<section class="alt">
-  <div class="container">
-    <h2 class="section-title"><span class="ko">대표 논문</span><span class="en">Selected Publications</span></h2>
-    <ol class="pub-list">
+    <div class="tab-bar" role="tablist">
+      <button class="tab-btn active" data-tab="summary"><span class="ko">논문 요약</span><span class="en">Summary</span></button>
+      <button class="tab-btn" data-tab="all"><span class="ko">전체 논문</span><span class="en">All Publications</span></button>
+      <button class="tab-btn" data-tab="book"><span class="ko">북챕터</span><span class="en">Book Chapter</span></button>
+      <button class="tab-btn" data-tab="patents"><span class="ko">특허</span><span class="en">Patents</span></button>
+      <button class="tab-btn" data-tab="talks"><span class="ko">학술발표</span><span class="en">Presentations</span></button>
+    </div>
+
+    <!-- ===================== Tab 1: Summary ===================== -->
+    <div class="tab-panel active" id="panel-summary">
+      <h2 class="section-title" style="margin-top:26px;"><span class="ko">논문 요약</span><span class="en">Publication Summary</span></h2>
+      <div class="stats">
+        <div class="stat"><div class="num">69</div><div class="label"><span class="ko">전체 논문</span><span class="en">Total Publications</span></div></div>
+        <div class="stat"><div class="num">38</div><div class="label"><span class="ko">제1저자·교신저자 논문</span><span class="en">First/Corresponding Author</span></div></div>
+        <div class="stat"><div class="num">20</div><div class="label">H-index</div></div>
+        <div class="stat"><div class="num">1,296<small>+</small></div><div class="label"><span class="ko">피인용 횟수</span><span class="en">Citations</span></div></div>
+      </div>
+      <p style="margin-top:14px;font-size:0.8rem;color:#8aa5ba;">
+        <span class="ko">* Google Scholar 기준 (2026년 7월 기준) · 교신저자 1편, 제1저자 37편, 공저자 32편</span>
+        <span class="en">* Based on Google Scholar (as of Jul. 2026) · Corresponding author: 1, first author: 37, co-author: 32</span>
+      </p>
+      <div class="btn-row" style="margin-top:18px;">
+        <a class="btn btn-primary" href="https://scholar.google.co.kr/citations?user=AMC3wKoAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn btn-outline" href="https://orcid.org/0000-0002-0017-3716" target="_blank" rel="noopener">ORCID</a>
+        <a class="btn btn-outline" href="https://www.scopus.com/authid/detail.uri?authorId=57194348573" target="_blank" rel="noopener">Scopus</a>
+      </div>
+
+      <h2 class="section-title" style="margin-top:44px;"><span class="ko">대표 논문</span><span class="en">Selected Publications</span></h2>
+      <ol class="pub-list">
       <li class="pub-item">
         <span class="pub-no"></span>
         <div>
@@ -161,57 +168,148 @@
         </div>
         <a class="doi-btn" href="https://doi.org/10.1016/j.enconman.2024.118827" target="_blank" rel="noopener">DOI</a>
       </li>
-    </ol>
-  </div>
-</section>
+      </ol>
+    </div>
 
-<section>
-  <div class="container">
-    <h2 class="section-title"><span class="ko">북챕터</span><span class="en">Book Chapter</span></h2>
-    <ul class="plain-list">
-      <li><strong>Ecological Impacts of Microplastics on Marine Organisms.</strong><br>
-      Lee, T., Kim, J. Y., &amp; Kwon, E. E. (2027). In <em>Handbook of Microplastics and Associated Chemicals</em> (pp. 199–221). CRC Press.</li>
-    </ul>
-  </div>
-</section>
+    <!-- ===================== Tab 2: All Publications ===================== -->
+    <div class="tab-panel" id="panel-all">
+      <h2 class="section-title" style="margin-top:26px;"><span class="ko">전체 논문</span><span class="en">All Publications</span></h2>
+      <p class="notice">
+        <span class="ko">국제학술지 논문 69편 (2017–2026). 인용 현황 등 최신 정보는 Google Scholar에서 확인할 수 있습니다.</span>
+        <span class="en">69 peer-reviewed research articles (2017–2026). For citation metrics and the latest updates, see Google Scholar.</span>
+      </p>
+      <div class="btn-row" style="margin:16px 0 4px;">
+        <a class="btn btn-primary" href="https://scholar.google.co.kr/citations?user=AMC3wKoAAAAJ" target="_blank" rel="noopener"><span class="ko">Google Scholar에서 전체 보기</span><span class="en">View All on Google Scholar</span></a>
+      </div>
+      <p style="font-size:0.8rem;color:#8aa5ba;margin:10px 0 4px;"><sup>1</sup> <span class="ko">공동 제1저자 (equal contribution)</span><span class="en">Co-first authors (equal contribution)</span></p>
+    <h3 class="year-head">2026 <span style="color:#8aa5ba;font-size:0.85rem;font-weight:600;"><span class="ko">· 10편</span><span class="en">· 10 papers</span></span></h3>
+    <div class="pub-row"><span class="pub-no-sm">1.</span> T. Lee, G. Moon, Y.-M. Kim, E.E. Kwon. CO2-assisted control of H2/CO ratio in plastic waste pyrolysis. Energy Conversion and Management. 350 (2026) 120997. <a class="doi-link" href="https://doi.org/10.1016/j.enconman.2025.120997" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">2.</span> H. Cha, T. Lee, S. Lee, Y.-M. Kim, E.E. Kwon. Use of carbon dioxide for carbon-negative syngas production from the pyrolysis of cork waste. Journal of Analytical and Applied Pyrolysis. 196 (2026) 107791. <a class="doi-link" href="https://doi.org/10.1016/j.jaap.2026.107791" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">3.</span> Y. Kim, T. Lee, J.Y. Jung, E.E. Kwon. Carbon-negative energy production from CO2-cofed pyrolysis of invasive biomass (water hyacinth). Industrial Crops and Products. 240 (2026) 122684. <a class="doi-link" href="https://doi.org/10.1016/j.indcrop.2026.122684" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">4.</span> C. Yang, T. Lee, Y.-M. Kim, D. Lee, E.E. Kwon. CO2-driven suppression of toxic aromatic formation during pyrolysis of acrylic fabric waste. Journal of Analytical and Applied Pyrolysis. 195 (2026) 107644. <a class="doi-link" href="https://doi.org/10.1016/j.jaap.2026.107644" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">5.</span> M. Kim, S. Lee, T. Lee, C.-G. Lee, J. Lee, E.E. Kwon. Biodiesel production through thermally induced transesterification from waste cooking oil using calcium phosphate catalyst. Fuel. 415 (2026) 138491. <a class="doi-link" href="https://doi.org/10.1016/j.fuel.2026.138491" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">6.</span> H. Cha, Y. Kim, T. Lee, S.J. Park, E.E. Kwon. Sustainable hydrogen production through catalytic pyrolysis of lignocellulosic biomass using carbon dioxide. Energy Conversion and Management. 347 (2026). <a class="doi-link" href="https://doi.org/10.1016/j.enconman.2025.120564" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">7.</span> M. Kim, J. Lee, T. Lee, H.W. Kim, E.E. Kwon. Thermally induced transesterification of Prunus mume seed into biodiesel using dimethyl carbonate as a green acyl acceptor. Energy Conversion and Management. 348 (2026). <a class="doi-link" href="https://doi.org/10.1016/j.enconman.2025.120749" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">8.</span> J.H. Kim, G. Park, T. Lee, J. Lee, E.E. Kwon. Strategic way for peach seed valorisation by integrating thermochemical approaches: Transesterification and pyrolysis. Journal of Analytical and Applied Pyrolysis. 193 (2026). <a class="doi-link" href="https://doi.org/10.1016/j.jaap.2025.107377" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">9.</span> M. Kim, S. Lee, T. Lee, W.-H. Chen, J. Lee, D. Lee, E.E. Kwon. Thermochemical bioalcohol production from butyric acid using methanol as an in-situ hydrogen source. Renewable Energy. 267 (2026) 125780. <a class="doi-link" href="https://doi.org/10.1016/j.renene.2026.125780" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">10.</span> J. Park, D. Choi, H. Kwon, T. Lee, E.E. Kwon, J. Lee, et al. Sustainable production of alternative aviation fuel via thermolytic conversion of plastic waste: techno-economic analysis and life cycle assessment. Applied Energy. 407 (2026) 127399. <a class="doi-link" href="https://doi.org/10.1016/j.apenergy.2026.127399" target="_blank" rel="noopener">[DOI]</a></div>
+    <h3 class="year-head">2025 <span style="color:#8aa5ba;font-size:0.85rem;font-weight:600;"><span class="ko">· 23편</span><span class="en">· 23 papers</span></span></h3>
+    <div class="pub-row"><span class="pub-no-sm">11.</span> T. Lee, D. Kwon, S. Lee, Y. Kim, J.Y. Kim, H. Song, et al. Recovery of chemicals and energy through thermo-chemical processing of plastic waste. Progress in Energy and Combustion Science. 108 (2025) 101219. <a class="doi-link" href="https://doi.org/10.1016/j.pecs.2025.101219" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">12.</span> T. Lee, G. Park, H. Cha, H. Nam, H.W. Kim, E.E. Kwon. Biochar utilization in thermochemical biodiesel production from perilla seed. Chemical Engineering Journal. 525 (2025). <a class="doi-link" href="https://doi.org/10.1016/j.cej.2025.170661" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">13.</span> T. Lee, H. Cha, J.Y. Kim, H. Choi, J. Lee, S. Yun, et al. Modifying carbon feedback by transforming arctic soil into biochar. Renewable and Sustainable Energy Reviews. 216 (2025) 115712. <a class="doi-link" href="https://doi.org/10.1016/j.rser.2025.115712" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">14.</span> T. Lee, S. Lee, Y.F. Tsang, E.E. Kwon. Carbon-negative power generation using syngas produced from CO2-cofeeding pyrolysis of lignocellulosic biomass. Energy. 325 (2025) 136215. <a class="doi-link" href="https://doi.org/10.1016/j.energy.2025.136215" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">15.</span> T. Lee, H. Cha, S. Lee, J. Lee, E.E. Kwon. Production of CO-rich syngas through CO2-Mediated pyrolysis of plastic waste and its practical use for power generation. Energy. 319 (2025) 135053. <a class="doi-link" href="https://doi.org/10.1016/j.energy.2025.135053" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">16.</span> T. Lee, G. Moon, D. Lee, W.-H. Chen, E.E. Kwon. Carbon emission mitigation from the CO2-cofed pyrolysis of invasive biomass: A case study on kudzu (Pueraria montana). Energy Conversion and Management. 343 (2025) 120243. <a class="doi-link" href="https://doi.org/10.1016/j.enconman.2025.120243" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">17.</span> T. Lee, J.-H. Kim, H. Choi, Y. Kim, S.-J. Park, E.E. Kwon. Pyrolytic conversion of polyimide into carbon-based CO2 adsorbent with in-situ suppression of toxic byproducts. Polymer Degradation and Stability. 234 (2025) 111193. <a class="doi-link" href="https://doi.org/10.1016/j.polymdegradstab.2025.111193" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">18.</span> T. Lee, Y. Kim, H. Song, S.J. Park, E.E. Kwon. Net carbon reduction from the pyrolysis of corn stover. Journal of Environmental Management. 394 (2025). <a class="doi-link" href="https://doi.org/10.1016/j.jenvman.2025.127539" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">19.</span> T. Lee<sup>1</sup>, J. Lee<sup>1</sup>, J. Lee, Y.F. Tsang, S.-J. Hwang, E. Kwon. Environmental advantages of carbon-negative syngas production from the CO2-mediated pyrolysis of reed. Energy Conversion and Management. 342 (2025) 120152. <a class="doi-link" href="https://doi.org/10.1016/j.enconman.2025.120152" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">20.</span> T. Lee<sup>1</sup>, J. Park<sup>1</sup>, Y. Kim, W.-H. Chen, E.E. Kwon. Comparison of toxic pyrogenic compounds derived from conventional cigarettes and heated tobacco products. Journal of Hazardous Materials. 493 (2025) 138357. <a class="doi-link" href="https://doi.org/10.1016/j.jhazmat.2025.138357" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">21.</span> T. Lee<sup>1</sup>, G. Moon<sup>1</sup>, J. Lee, S.-H. Jang, Y.F. Tsang, E.E. Kwon. Assessing carbon negative potential in CO2-mediated pyrolysis of agricultural residue. Journal of Analytical and Applied Pyrolysis. 192 (2025) 107259. <a class="doi-link" href="https://doi.org/10.1016/j.jaap.2025.107259" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">22.</span> J.Y. Kim<sup>1</sup>, T. Lee<sup>1</sup>, H. Cha, H. Song, E.E. Kwon. Changing biomass into carbon-negative through dual-step approach: CO2-assisted pyrolysis and biochar-based CO2 adsorption. Journal of Environmental Management. 383 (2025) 125484. <a class="doi-link" href="https://doi.org/10.1016/j.jenvman.2025.125484" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">23.</span> K. Yoon<sup>1</sup>, T. Lee<sup>1</sup>, H. Cha, J. Lee, J. Lee, H. Song. Evaluating sustainability of CO2-mediated pyrolysis of lignocellulose. Bioresource Technology. 416 (2025). <a class="doi-link" href="https://doi.org/10.1016/j.biortech.2024.131765" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">24.</span> K. Yoon, T. Lee, J. Lee, H. Lee, Y. Yoo, H. Cho, et al. Cr(VI) removal by Fe-biochar composite derived from co-pyrolysis of rubber tree waste and steel sludge. Journal of Water Process Engineering. 77 (2025) 108387. <a class="doi-link" href="https://doi.org/10.1016/j.jwpe.2025.108387" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">25.</span> G. Park, T. Lee, J.-H. Kim, H. Song, W.-H. Chen, E.E. Kwon. Comprehensive valorization of oil-rich food waste through coupling transesterification with pyrolysis. Journal of Analytical and Applied Pyrolysis. 189 (2025) 107082. <a class="doi-link" href="https://doi.org/10.1016/j.jaap.2025.107082" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">26.</span> J.-H. Kim, T. Lee, Y.F. Tsang, W.-H. Chen, E.E. Kwon. Thermochemical conversion of grape marc into carbon-negative syngas. Journal of Environmental Management. 385 (2025) 125684. <a class="doi-link" href="https://doi.org/10.1016/j.jenvman.2025.125684" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">27.</span> J.H. Kim, T. Lee, D. Lee, W.H. Chen, E.E. Kwon. Carbon negative pyrolysis system for the valorization of agricultural waste into syngas. Thermal Science and Engineering Progress. 65 (2025). <a class="doi-link" href="https://doi.org/10.1016/j.tsep.2025.103927" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">28.</span> Y. Kim, T. Lee, J. Park, E.E. Kwon. Fabrication of Oxygen-functionalized Graphitic Carbon Nitride and Its Photocatalytic Removal of Gaseous Toluene. Journal of Korean Society for Atmospheric Environment. 41(5) (2025) pp. 874-886. <a class="doi-link" href="https://doi.org/10.5572/KOSAE.2025.41.5.874" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">29.</span> S. Lee, M. Kim, T. Lee, H. Song, J. Lee, E.E. Kwon. Zero-waste valorisation of rapeseed through integration of CO2-assisted pyrolysis and biochar-catalysed transesterification. Energy Conversion and Management. 345 (2025). <a class="doi-link" href="https://doi.org/10.1016/j.enconman.2025.120368" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">30.</span> Y. Kim, J. Lee, T. Lee, H.W. Kim, E.E. Kwon. Roles of CO2 in carbon-negative syngas production from pyrolysis of cellulosic biomass (oat hull). International Journal of Biological Macromolecules. 331 (2025). <a class="doi-link" href="https://doi.org/10.1016/j.ijbiomac.2025.148455" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">31.</span> J. Lee, M. Kim, T. Lee, W.H. Chen, E.E. Kwon. Carbon-negative syngas production via CO2-assisted catalytic pyrolysis of lignocellulosic yard waste: A case study on horse chestnut shells. Journal of Environmental Management. 394 (2025). <a class="doi-link" href="https://doi.org/10.1016/j.jenvman.2025.127381" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">32.</span> S. Kim, H. Cha, T. Lee, J.Y. Kim, J. Lee, S.-H. Jang, et al. Suppression of carbon footprint through the CO2-assisted pyrolysis of livestock waste. Science of The Total Environment. 964 (2025) 178615. <a class="doi-link" href="https://doi.org/10.1016/j.scitotenv.2025.178615" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">33.</span> J.Y. Kim, J.-H. Hwang, T. Lee, Y. Kim, S. Bae, D. Kim, et al. A review of sustainable metal recovery from e-waste via bioleaching: Current status and strategies for improvement. Chemical Engineering Journal. 516 (2025) 164149. <a class="doi-link" href="https://doi.org/10.1016/j.cej.2025.164149" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">34.</span> J.Y. Kim, D.J. Lee, J. Park, T. Lee, E.E. Kwon. Insect-derived biochar for CO2 adsorption under humid conditions: Elucidating adsorption mechanisms and competitive interactions with water molecules. Science of the Total Environment. 959 (2025). <a class="doi-link" href="https://doi.org/10.1016/j.scitotenv.2024.178304" target="_blank" rel="noopener">[DOI]</a></div>
+    <h3 class="year-head">2024 <span style="color:#8aa5ba;font-size:0.85rem;font-weight:600;"><span class="ko">· 13편</span><span class="en">· 13 papers</span></span></h3>
+    <div class="pub-row"><span class="pub-no-sm">35.</span> T. Lee, D. Choi, J. Park, Y.F. Tsang, K.Y. Andrew Lin, S. Jung, et al. Valorizing spent mushroom substrate into syngas by the thermo-chemical process. Bioresource Technology. 391 (2024). <a class="doi-link" href="https://doi.org/10.1016/j.biortech.2023.130007" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">36.</span> T. Lee<sup>1</sup>, S. Lee<sup>1</sup>, D. Lee, E.E. Kwon. Impact of CO2 on the pyrolysis of mixed polymer wastes into combustible fuel: A case study for footwear waste. Journal of Analytical and Applied Pyrolysis. 183 (2024). <a class="doi-link" href="https://doi.org/10.1016/j.jaap.2024.106810" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">37.</span> T. Lee<sup>1</sup>, J.H. Kim<sup>1</sup>, J. Lee, E.E. Kwon. Thermochemical processing for the sustainable disposal of spent filter waste. Chemosphere. 369 (2024). <a class="doi-link" href="https://doi.org/10.1016/j.chemosphere.2024.143863" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">38.</span> T. Lee<sup>1</sup>, S. Jung<sup>1</sup>, S. Lee, Y.F. Tsang, K.H. Lee, E.E. Kwon. Production of aviation fuel via thermal cracking of plastic waste. Energy Conversion and Management. 315 (2024). <a class="doi-link" href="https://doi.org/10.1016/j.enconman.2024.118827" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">39.</span> S. Lee<sup>1</sup>, T. Lee<sup>1</sup>, H. Cha, S. Jung, Y.F. Tsang, J. Lee, et al. Enhancement of syngas through integrating carbon dioxide in the catalytic pyrolysis of plantation waste. Energy Conversion and Management. 311 (2024). <a class="doi-link" href="https://doi.org/10.1016/j.enconman.2024.118554" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">40.</span> Y. Kim<sup>1</sup>, T. Lee<sup>1</sup>, D. Lee, H. Cho, E.E. Kwon. Using CO2 in pyrolysis to neutralise toxic aromatic compounds derived from blended textile waste. Journal of Analytical and Applied Pyrolysis. 183 (2024). <a class="doi-link" href="https://doi.org/10.1016/j.jaap.2024.106760" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">41.</span> J.H. Kim<sup>1</sup>, T. Lee<sup>1</sup>, Y.F. Tsang, D.H. Moon, J. Lee, E.E. Kwon. Functional use of carbon dioxide for the sustainable valorization of orange peel in the pyrolysis process. Science of the Total Environment. 941 (2024). <a class="doi-link" href="https://doi.org/10.1016/j.scitotenv.2024.173701" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">42.</span> J.H. Kim<sup>1</sup>, T. Lee<sup>1</sup>, J. Lee, H. Choi, E.E. Kwon. Conversion of toxic pyrogenic products into syngas through catalytic pyrolysis of insulation material waste under the presence of CO2. Journal of Hazardous Materials. 476 (2024). <a class="doi-link" href="https://doi.org/10.1016/j.jhazmat.2024.134916" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">43.</span> S.H. Cho<sup>1</sup>, T. Lee<sup>1</sup>, H. Cha, W.H. Chen, Y.F. Tsang, E.E. Kwon. Production of combustible gas via incorporating CO2 to pyrolysis of medicinal herbal waste. Industrial Crops and Products. 219 (2024). <a class="doi-link" href="https://doi.org/10.1016/j.indcrop.2024.119110" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">44.</span> S. Lee, T. Lee, D. Lee, Y.F. Tsang, E.E. Kwon. Sustainable syngas production from thermochemical processing of cellulosic textile waste in the presence of CO2. Energy. 311 (2024). <a class="doi-link" href="https://doi.org/10.1016/j.energy.2024.133483" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">45.</span> Y. Kim, J. Park, T. Lee, D.H. Moon, E.E. Kwon. Use of CO2 for enhanced carbon recovery in thermochemical processing of fruit peel waste. Chemical Engineering Journal. 499 (2024). <a class="doi-link" href="https://doi.org/10.1016/j.cej.2024.155908" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">46.</span> J.H. Kim, D.J. Lee, T. Lee, J.Y. Kim, Y.F. Tsang, E.E. Kwon. Reactivity of carbon dioxide during pyrolysis of paper-plastic composite. Cellulose. 31 (2024) 3447-63. <a class="doi-link" href="https://doi.org/10.1007/s10570-024-05805-z" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">47.</span> J.H. Kim, S. Jung, T. Lee, Y.F. Tsang, E.E. Kwon. Thermo-chemical disposal of plastic waste from end-of-life vehicles (ELVs) using CO2. Energy. 290 (2024). <a class="doi-link" href="https://doi.org/10.1016/j.energy.2023.130136" target="_blank" rel="noopener">[DOI]</a></div>
+    <h3 class="year-head">2023 <span style="color:#8aa5ba;font-size:0.85rem;font-weight:600;"><span class="ko">· 1편</span><span class="en">· 1 papers</span></span></h3>
+    <div class="pub-row"><span class="pub-no-sm">48.</span> T. Lee, J.H. Kim, Y.F. Tsang, W.H. Chen, D. Lee, M.W. Jung, et al. Conversion of toxic chemicals into flammable gases through the thermolysis of polyurethane foam using CO2. Chemical Engineering Journal. 457 (2023). <a class="doi-link" href="https://doi.org/10.1016/j.cej.2023.141291" target="_blank" rel="noopener">[DOI]</a></div>
+    <h3 class="year-head">2022 <span style="color:#8aa5ba;font-size:0.85rem;font-weight:600;"><span class="ko">· 2편</span><span class="en">· 2 papers</span></span></h3>
+    <div class="pub-row"><span class="pub-no-sm">49.</span> T. Lee, S. Jung, K. Baek, Y.F. Tsang, K.Y.A. Lin, Y.J. Jeon, et al. Functional use of CO2 to mitigate the formation of bisphenol A in catalytic pyrolysis of polycarbonate. Journal of Hazardous Materials. 423 (2022). <a class="doi-link" href="https://doi.org/10.1016/j.jhazmat.2021.126992" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">50.</span> J.M. Jung<sup>1</sup>, T. Lee<sup>1</sup>, S. Jung, Y.F. Tsang, A. Bhatnagar, S.S. Lee, et al. Control of the fate of toxic pollutants from catalytic pyrolysis of polyurethane by oxidation using CO2. Chemical Engineering Journal. 442 (2022). <a class="doi-link" href="https://doi.org/10.1016/j.cej.2022.136358" target="_blank" rel="noopener">[DOI]</a></div>
+    <h3 class="year-head">2021 <span style="color:#8aa5ba;font-size:0.85rem;font-weight:600;"><span class="ko">· 3편</span><span class="en">· 3 papers</span></span></h3>
+    <div class="pub-row"><span class="pub-no-sm">51.</span> T. Lee, S. Jung, K.Y.A. Lin, Y.F. Tsang, E.E. Kwon. Mitigation of harmful chemical formation from pyrolysis of tobacco waste using CO2. Journal of Hazardous Materials. 401 (2021). <a class="doi-link" href="https://doi.org/10.1016/j.jhazmat.2020.123416" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">52.</span> T. Lee, S. Jung, K.H. Kim, E.E. Kwon. Catalytic pyrolysis of pine bark over Ni/SiO2 in a CO2 atmosphere. Energy. 220 (2021). <a class="doi-link" href="https://doi.org/10.1016/j.energy.2021.119827" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">53.</span> S. Jung, T. Lee, J. Lee, K.Y.A. Lin, Y.K. Park, E.E. Kwon. Catalytic pyrolysis of plastics derived from end-of-life-vehicles (ELVs) under the CO2 environment. International Journal of Energy Research. 45 (2021) 16781-93. <a class="doi-link" href="https://doi.org/10.1002/er.6927" target="_blank" rel="noopener">[DOI]</a></div>
+    <h3 class="year-head">2020 <span style="color:#8aa5ba;font-size:0.85rem;font-weight:600;"><span class="ko">· 4편</span><span class="en">· 4 papers</span></span></h3>
+    <div class="pub-row"><span class="pub-no-sm">54.</span> T. Lee, I.H. Nam, S. Jung, Y.K. Park, E.E. Kwon. Synthesis of nickel/biochar composite from pyrolysis of Microcystis aeruginosa and its practical use for syngas production. Bioresource Technology. 300 (2020). <a class="doi-link" href="https://doi.org/10.1016/j.biortech.2019.122712" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">55.</span> T. Lee, S. Jung, Y.K. Park, T. Kim, H. Wang, D.H. Moon, et al. Catalytic Pyrolysis of Polystyrene over Steel Slag under CO2 Environment. Journal of Hazardous Materials. 395 (2020). <a class="doi-link" href="https://doi.org/10.1016/j.jhazmat.2020.122576" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">56.</span> T. Lee, S. Jung, J. Hong, C.H. Wang, D.S. Alessi, S.S. Lee, et al. Using CO2 as an Oxidant in the Catalytic Pyrolysis of Peat Moss from the North Polar Region. Environmental Science and Technology. 54 (2020) 6329-43. <a class="doi-link" href="https://doi.org/10.1021/acs.est.0c01862" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">57.</span> T. Lee, S.H. Jang, S. Jung, S. Kim, Y.K. Park, D.H. Moon, et al. CO2 effects on catalytic pyrolysis of yard trimming over concrete waste. Chemical Engineering Journal. 396 (2020). <a class="doi-link" href="https://doi.org/10.1016/j.cej.2020.125331" target="_blank" rel="noopener">[DOI]</a></div>
+    <h3 class="year-head">2019 <span style="color:#8aa5ba;font-size:0.85rem;font-weight:600;"><span class="ko">· 1편</span><span class="en">· 1 papers</span></span></h3>
+    <div class="pub-row"><span class="pub-no-sm">58.</span> T. Lee, J.I. Oh, H. Yi, Y.F. Tsang, E.E. Kwon. Fabrication of carbon-slag composite via a pyrolytic platform and its environmental application for arsenic removal as a case study. Chemical Engineering Journal. 361 (2019) 1630-9. <a class="doi-link" href="https://doi.org/10.1016/j.cej.2019.01.022" target="_blank" rel="noopener">[DOI]</a></div>
+    <h3 class="year-head">2018 <span style="color:#8aa5ba;font-size:0.85rem;font-weight:600;"><span class="ko">· 5편</span><span class="en">· 5 papers</span></span></h3>
+    <div class="pub-row"><span class="pub-no-sm">59.</span> T. Lee, J.I. Oh, T. Kim, D.C.W. Tsang, K.H. Kim, J. Lee, et al. Controlling generation of benzenes and polycyclic aromatic hydrocarbons in thermolysis of polyvinyl chloride in CO2. Energy Conversion and Management. 164 (2018) 453-9. <a class="doi-link" href="https://doi.org/10.1016/j.enconman.2018.03.019" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">60.</span> T. Lee, J.I. Oh, K. Baek, Y.F. Tsang, K.H. Kim, E.E. Kwon. Compositional modification of pyrogenic products using CaCO3 and CO2 from the thermolysis of polyvinyl chloride (PVC). Green Chemistry. 20 (2018) 1583-93. <a class="doi-link" href="https://doi.org/10.1039/c8gc00111a" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">61.</span> T. Lee, I.H. Nam, J.H. Kim, M. Zhang, T.Y. Jeong, K. Baek, et al. The enhanced thermolysis of heavy oil contaminated soil using CO2 for soil remediation and energy recovery. Journal of CO2 Utilization. 28 (2018) 367-73. <a class="doi-link" href="https://doi.org/10.1016/j.jcou.2018.10.017" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">62.</span> S.R. Lee, J. Lee, T. Lee, S.H. Cho, J.I. Oh, H. Kim, et al. Carbon dioxide assisted thermal decomposition of cattle excreta. Science of the Total Environment. 615 (2018) 70-7. <a class="doi-link" href="https://doi.org/10.1016/j.scitotenv.2017.09.201" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">63.</span> E.E. Kwon, T. Lee, Y.S. Ok, D.C.W. Tsang, C. Park, J. Lee. Effects of calcium carbonate on pyrolysis of sewage sludge. Energy. 153 (2018) 726-31. <a class="doi-link" href="https://doi.org/10.1016/j.energy.2018.04.100" target="_blank" rel="noopener">[DOI]</a></div>
+    <h3 class="year-head">2017 <span style="color:#8aa5ba;font-size:0.85rem;font-weight:600;"><span class="ko">· 6편</span><span class="en">· 6 papers</span></span></h3>
+    <div class="pub-row"><span class="pub-no-sm">64.</span> T. Lee, J. Lee, Y.S. Ok, J.I. Oh, S.R. Lee, J. Rinklebe, et al. Utilizing CO2 to suppress the generation of harmful chemicals from thermal degradation of polyvinyl chloride. Journal of Cleaner Production. 162 (2017) 1465-71. <a class="doi-link" href="https://doi.org/10.1016/j.jclepro.2017.06.181" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">65.</span> J. Lee, T. Lee, Y.F. Tsang, J.I. Oh, E.E. Kwon. Enhanced energy recovery from polyethylene terephthalate via pyrolysis in CO2 atmosphere while suppressing acidic chemical species. Energy Conversion and Management. 148 (2017) 456-60. <a class="doi-link" href="https://doi.org/10.1016/j.enconman.2017.06.026" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">66.</span> J.I. Oh, J. Lee, T. Lee, Y.S. Ok, S.R. Lee, E.E. Kwon. Strategic CO2 utilization for shifting carbon distribution from pyrolytic oil to syngas in pyrolysis of food waste. Journal of CO2 Utilization. 20 (2017) 150-5. <a class="doi-link" href="https://doi.org/10.1016/j.jcou.2017.05.017" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">67.</span> S.R. Lee, J. Lee, T. Lee, Y.F. Tsang, K.H. Jeong, J.I. Oh, et al. Strategic use of CO2 for co-pyrolysis of swine manure and coal for energy recovery and waste disposal. Journal of CO2 Utilization. 22 (2017) 110-6. <a class="doi-link" href="https://doi.org/10.1016/j.jcou.2017.09.018" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">68.</span> J. Lee, T. Lee, Y.S. Ok, J.I. Oh, E.E. Kwon. Using CO2 to mitigate evolution of harmful chemical compounds during thermal degradation of printed circuit boards. Journal of CO2 Utilization. 20 (2017) 66-72. <a class="doi-link" href="https://doi.org/10.1016/j.jcou.2017.05.009" target="_blank" rel="noopener">[DOI]</a></div>
+    <div class="pub-row"><span class="pub-no-sm">69.</span> J.M. Jung, S.R. Lee, J. Lee, T. Lee, D.C.W. Tsang, E.E. Kwon. Biodiesel synthesis using chicken manure biochar and waste cooking oil. Bioresource Technology. 244 (2017) 810-5. <a class="doi-link" href="https://doi.org/10.1016/j.biortech.2017.08.044" target="_blank" rel="noopener">[DOI]</a></div>
+    </div>
 
-<section class="alt">
-  <div class="container">
-    <h2 class="section-title"><span class="ko">특허</span><span class="en">Patents</span></h2>
-    <ul class="plain-list">
-      <li><span class="tag reg"><span class="ko">등록</span><span class="en">Registered</span></span>
-        <strong><span class="ko">제조되는 기능성 바이오차의 수율 및 흡착 성능을 향상시키기 위한 바이오매스의 종류에 따른 기능성 바이오차 제조 조건을 결정하는 방법</span><span class="en">Method for determining engineered biochar manufacturing conditions according to types of biomass to improve yield and adsorption performance</span></strong><br>
-        <span class="ko">권일한, 이태우, 이상윤, 정성엽 · 세종대학교 산학협력단 · 등록번호 1029572690000 (2026.04.21)</span>
-        <span class="en">E.E. Kwon; T. Lee; S. Lee; S. Jung · Sejong University IUCF · KR Registration No. 1029572690000 (Apr. 21, 2026)</span></li>
-      <li><span class="tag reg"><span class="ko">등록</span><span class="en">Registered</span></span>
-        <strong><span class="ko">이산화탄소의 연료화 방법</span><span class="en">Method of converting carbon dioxide to fuels</span></strong><br>
-        <span class="ko">권일한, 이태우, 정성엽 · 세종대학교 산학협력단 · 등록번호 1025358490000 (2023.05.18)</span>
-        <span class="en">E.E. Kwon; T. Lee; S. Jung · Sejong University IUCF · KR Registration No. 1025358490000 (May 18, 2023)</span></li>
-      <li><span class="tag reg"><span class="ko">등록</span><span class="en">Registered</span></span>
-        <strong><span class="ko">혐기성소화조의 중간생성물을 이용한 바이오알코올의 제조방법</span><span class="en">Method for producing bio-alcohol from intermediate products of anaerobic digestion tank</span></strong><br>
-        <span class="ko">권일한, 정종민, 조성헌, 최동호, 이태우 외 · 세종대학교 산학협력단 · 등록번호 1022720120000 (2021.06.28)</span>
-        <span class="en">E.E. Kwon; J.M. Jung; S.H. Cho; D. Choi; T. Lee et al. · Sejong University IUCF · KR Registration No. 1022720120000 (Jun. 28, 2021)</span></li>
-      <li><span class="tag reg"><span class="ko">등록</span><span class="en">Registered</span></span>
-        <strong><span class="ko">중력 보상 기반 자립형 휠체어</span><span class="en">Passive self-standable wheelchair with weight compensation unit</span></strong><br>
-        <span class="ko">곽관웅, 이태우, 김경진, 최이주 · 세종대학교 산학협력단 · 등록번호 1018956790000 (2018.08.31)</span>
-        <span class="en">K.W. Gwak; T. Lee; K. Kim; I. Choi · Sejong University IUCF · KR Registration No. 1018956790000 (Aug. 31, 2018)</span></li>
-      <li><span class="tag app"><span class="ko">출원</span><span class="en">Application</span></span>
-        <strong><span class="ko">조리흄 포집 및 분석 장치와 조리흄 포집 및 분석 방법</span><span class="en">Cooking fume collection and analysis method</span></strong><br>
-        <span class="ko">권일한, 김민영, 최동호, 이태우 외 · 한양대학교 산학협력단 · 출원번호 1020240136090 (2024.10.07)</span>
-        <span class="en">E.E. Kwon; M. Kim; D. Choi; T. Lee et al. · Hanyang University IUCF · KR Application No. 1020240136090 (Oct. 7, 2024)</span></li>
-    </ul>
-  </div>
-</section>
+    <!-- ===================== Tab 3: Book Chapter ===================== -->
+    <div class="tab-panel" id="panel-book">
+      <h2 class="section-title" style="margin-top:26px;"><span class="ko">북챕터</span><span class="en">Book Chapter</span></h2>
+      <ul class="plain-list">
+        <li><strong>Ecological Impacts of Microplastics on Marine Organisms.</strong><br>
+        Lee, T., Kim, J. Y., &amp; Kwon, E. E. (2027). In <em>Handbook of Microplastics and Associated Chemicals</em> (pp. 199–221). CRC Press.</li>
+      </ul>
+    </div>
 
-<section>
-  <div class="container">
-    <h2 class="section-title"><span class="ko">학술발표</span><span class="en">Conference Presentations</span></h2>
-    <ul class="plain-list">
-      <li><strong><span class="ko">춘계 폐기물자원순환학회</span><span class="en">Korea Society of Waste Management, Spring Conference</span></strong> — <span class="ko">구두발표, 평창 알펜시아</span><span class="en">Oral presentation, Alpensia, Pyeongchang</span></li>
-      <li><strong><span class="ko">춘계 청정기술학회</span><span class="en">Korean Society of Clean Technology, Spring Conference</span></strong> — <span class="ko">포스터, 부산 벡스코</span><span class="en">Poster, BEXCO, Busan</span></li>
-      <li><strong>CMEE</strong> — <span class="ko">구두발표, 발리</span><span class="en">Oral presentation, Bali</span></li>
-      <li><strong><span class="ko">추계 폐기물자원순환학회 신진연구자 세션</span><span class="en">Korea Society of Waste Management, Fall Conference (Early-Career Researcher Session)</span></strong> — <span class="ko">구두발표, 여수 소노캄</span><span class="en">Oral presentation, Sono Calm, Yeosu</span></li>
-    </ul>
+    <!-- ===================== Tab 4: Patents ===================== -->
+    <div class="tab-panel" id="panel-patents">
+      <h2 class="section-title" style="margin-top:26px;"><span class="ko">특허</span><span class="en">Patents</span></h2>
+      <ul class="plain-list">
+        <li><span class="tag reg"><span class="ko">등록</span><span class="en">Registered</span></span>
+          <strong><span class="ko">제조되는 기능성 바이오차의 수율 및 흡착 성능을 향상시키기 위한 바이오매스의 종류에 따른 기능성 바이오차 제조 조건을 결정하는 방법</span><span class="en">Method for determining engineered biochar manufacturing conditions according to types of biomass to improve yield and adsorption performance</span></strong><br>
+          <span class="ko">권일한, 이태우, 이상윤, 정성엽 · 세종대학교 산학협력단 · 등록번호 1029572690000 (2026.04.21)</span>
+          <span class="en">E.E. Kwon; T. Lee; S. Lee; S. Jung · Sejong University IUCF · KR Registration No. 1029572690000 (Apr. 21, 2026)</span></li>
+        <li><span class="tag reg"><span class="ko">등록</span><span class="en">Registered</span></span>
+          <strong><span class="ko">이산화탄소의 연료화 방법</span><span class="en">Method of converting carbon dioxide to fuels</span></strong><br>
+          <span class="ko">권일한, 이태우, 정성엽 · 세종대학교 산학협력단 · 등록번호 1025358490000 (2023.05.18)</span>
+          <span class="en">E.E. Kwon; T. Lee; S. Jung · Sejong University IUCF · KR Registration No. 1025358490000 (May 18, 2023)</span></li>
+        <li><span class="tag reg"><span class="ko">등록</span><span class="en">Registered</span></span>
+          <strong><span class="ko">혐기성소화조의 중간생성물을 이용한 바이오알코올의 제조방법</span><span class="en">Method for producing bio-alcohol from intermediate products of anaerobic digestion tank</span></strong><br>
+          <span class="ko">권일한, 정종민, 조성헌, 최동호, 이태우 외 · 세종대학교 산학협력단 · 등록번호 1022720120000 (2021.06.28)</span>
+          <span class="en">E.E. Kwon; J.M. Jung; S.H. Cho; D. Choi; T. Lee et al. · Sejong University IUCF · KR Registration No. 1022720120000 (Jun. 28, 2021)</span></li>
+        <li><span class="tag reg"><span class="ko">등록</span><span class="en">Registered</span></span>
+          <strong><span class="ko">중력 보상 기반 자립형 휠체어</span><span class="en">Passive self-standable wheelchair with weight compensation unit</span></strong><br>
+          <span class="ko">곽관웅, 이태우, 김경진, 최이주 · 세종대학교 산학협력단 · 등록번호 1018956790000 (2018.08.31)</span>
+          <span class="en">K.W. Gwak; T. Lee; K. Kim; I. Choi · Sejong University IUCF · KR Registration No. 1018956790000 (Aug. 31, 2018)</span></li>
+        <li><span class="tag app"><span class="ko">출원</span><span class="en">Application</span></span>
+          <strong><span class="ko">조리흄 포집 및 분석 장치와 조리흄 포집 및 분석 방법</span><span class="en">Cooking fume collection and analysis method</span></strong><br>
+          <span class="ko">권일한, 김민영, 최동호, 이태우 외 · 한양대학교 산학협력단 · 출원번호 1020240136090 (2024.10.07)</span>
+          <span class="en">E.E. Kwon; M. Kim; D. Choi; T. Lee et al. · Hanyang University IUCF · KR Application No. 1020240136090 (Oct. 7, 2024)</span></li>
+      </ul>
+    </div>
+
+    <!-- ===================== Tab 5: Presentations ===================== -->
+    <div class="tab-panel" id="panel-talks">
+      <h2 class="section-title" style="margin-top:26px;"><span class="ko">학술발표</span><span class="en">Conference Presentations</span></h2>
+      <ul class="plain-list">
+        <li><strong><span class="ko">춘계 폐기물자원순환학회</span><span class="en">Korea Society of Waste Management, Spring Conference</span></strong> — <span class="ko">구두발표, 평창 알펜시아</span><span class="en">Oral presentation, Alpensia, Pyeongchang</span></li>
+        <li><strong><span class="ko">춘계 청정기술학회</span><span class="en">Korean Society of Clean Technology, Spring Conference</span></strong> — <span class="ko">포스터, 부산 벡스코</span><span class="en">Poster, BEXCO, Busan</span></li>
+        <li><strong>CMEE</strong> — <span class="ko">구두발표, 발리</span><span class="en">Oral presentation, Bali</span></li>
+        <li><strong><span class="ko">추계 폐기물자원순환학회 신진연구자 세션</span><span class="en">Korea Society of Waste Management, Fall Conference (Early-Career Researcher Session)</span></strong> — <span class="ko">구두발표, 여수 소노캄</span><span class="en">Oral presentation, Sono Calm, Yeosu</span></li>
+      </ul>
+    </div>
+
   </div>
 </section>
 <footer class="site-footer">
@@ -238,7 +336,7 @@
         </ul>
       </div>
     </div>
-    <div class="copyright">&copy; 2026 Atmospheric Engineering and Sustainable Energy Laboratory, Jeju National University. All rights reserved.</div>
+    <div class="copyright">&copy; 2026 Atmospheric Engineering and Sustainable Energy (AESE) Laboratory, Department of Environmental Engineering, Jeju National University. All rights reserved.</div>
   </div>
 </footer>
 </body>

@@ -457,6 +457,46 @@ footer .copyright { border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top
 .page-hero h1 { color: var(--navy); font-size: 1.9rem; font-weight: 800; }
 .page-hero p { color: var(--ink-soft); margin-top: 6px; max-width: 720px; }
 
+/* ---------- Tabs ---------- */
+.tab-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 6px 0 18px;
+  border-bottom: 1px solid var(--line);
+}
+.tab-btn {
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.tab-btn:hover { border-color: var(--blue); color: var(--navy); background: var(--blue-light); }
+.tab-btn.active { background: var(--navy); border-color: var(--navy); color: #fff; }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* ---------- Compact publication rows (All Publications tab) ---------- */
+.year-head { color: var(--navy); font-size: 1.15rem; font-weight: 800; margin: 28px 0 6px; }
+.pub-row {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.pub-row strong { color: var(--ink); }
+.pub-row em { color: var(--navy); }
+.pub-row .pub-no-sm { color: var(--blue); font-weight: 700; margin-right: 2px; }
+.pub-row .doi-link { color: var(--blue); font-weight: 700; text-decoration: none; white-space: nowrap; }
+.pub-row .doi-link:hover { text-decoration: underline; }
+
 /* ---------- Notice ---------- */
 .notice {
   background: var(--green-light);
