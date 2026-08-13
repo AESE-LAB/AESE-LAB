@@ -561,7 +561,7 @@ footer .copyright { border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top
 }
 @media (max-width: 600px) {
   .grid-2, .grid-3, .grid-4, .stats, footer .foot-grid, .grid-2.loc-grid { grid-template-columns: 1fr; }
-  .hero h1 { font-size: 1.6rem; }
+  .hero h1 { font-size: clamp(1.05rem, 5.2vw, 1.6rem); word-break: keep-all; }
   .pub-item { grid-template-columns: 1fr; }
   .pub-item .pub-no { display: none; }
   .news-item { grid-template-columns: 1fr; gap: 4px; }
