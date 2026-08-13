@@ -381,6 +381,16 @@ dl.info-list dd { color: var(--ink-soft); }
 .tag.pi { background: #fdf1e3; color: #b26a1b; }
 .tag.co { background: var(--blue-light); color: var(--blue); }
 
+/* ---------- Course cards (Professor page) ---------- */
+.course-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px;
+}
+.course-card .tag { margin-right: 0; flex-shrink: 0; font-size: 0.78rem; padding: 4px 10px; }
+.course-card strong { color: var(--ink); font-size: 0.95rem; }
+
 /* ---------- Facilities ---------- */
 .facility-card .f-img {
   width: 100%;
