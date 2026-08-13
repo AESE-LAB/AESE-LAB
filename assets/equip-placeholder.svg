@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+  <rect width="400" height="240" fill="#f0f6fa"/>
+  <rect x="90" y="70" width="220" height="110" rx="10" fill="#b9cfe0"/>
+  <rect x="110" y="90" width="80" height="50" rx="4" fill="#eaf3fa"/>
+  <circle cx="250" cy="115" r="14" fill="#7fd1b0"/>
+  <circle cx="285" cy="115" r="8" fill="#eaf3fa"/>
+  <text x="200" y="210" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#54718a">Equipment Photo</text>
+</svg>

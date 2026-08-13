@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" font-family="sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#54718a"/>
+    </marker>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dceefb"/><stop offset="1" stop-color="#eef7f2"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="520" height="400" rx="18" fill="url(#sky)"/>
+
+  <!-- Waste input -->
+  <rect x="30" y="60" width="130" height="72" rx="12" fill="#ffffff" stroke="#dfe6ec"/>
+  <text x="95" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#0e3a5d">Waste</text>
+  <text x="95" y="110" text-anchor="middle" font-size="11" fill="#54718a">Plastic · Biomass</text>
+
+  <!-- Exhaust input -->
+  <rect x="30" y="250" width="130" height="72" rx="12" fill="#ffffff" stroke="#dfe6ec"/>
+  <text x="95" y="280" text-anchor="middle" font-size="14" font-weight="bold" fill="#0e3a5d">Exhaust Gas</text>
+  <text x="95" y="300" text-anchor="middle" font-size="11" fill="#54718a">VOCs · Pollutants</text>
+
+  <!-- Reactor 1 -->
+  <rect x="205" y="48" width="120" height="96" rx="14" fill="#1a6fae"/>
+  <text x="265" y="88" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Pyrolysis</text>
+  <text x="265" y="106" text-anchor="middle" font-size="11" fill="#cfe4f4">CO2-assisted</text>
+  <circle cx="235" cy="128" r="4" fill="#7fd1b0"/><circle cx="265" cy="128" r="4" fill="#7fd1b0"/><circle cx="295" cy="128" r="4" fill="#7fd1b0"/>
+
+  <!-- Reactor 2 -->
+  <rect x="205" y="238" width="120" height="96" rx="14" fill="#2e8b6e"/>
+  <text x="265" y="278" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Thermocatalysis</text>
+  <text x="265" y="296" text-anchor="middle" font-size="11" fill="#d8efe5">VOC Oxidation</text>
+  <circle cx="235" cy="318" r="4" fill="#bfe9d8"/><circle cx="265" cy="318" r="4" fill="#bfe9d8"/><circle cx="295" cy="318" r="4" fill="#bfe9d8"/>
+
+  <!-- Outputs -->
+  <rect x="370" y="60" width="130" height="72" rx="12" fill="#ffffff" stroke="#dfe6ec"/>
+  <text x="435" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e8b6e">Clean Energy</text>
+  <text x="435" y="110" text-anchor="middle" font-size="11" fill="#54718a">Syngas · Fuels</text>
+
+  <rect x="370" y="250" width="130" height="72" rx="12" fill="#ffffff" stroke="#dfe6ec"/>
+  <text x="435" y="280" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a6fae">Clean Air</text>
+  <text x="435" y="300" text-anchor="middle" font-size="11" fill="#54718a">Pollutant-free</text>
+
+  <!-- Arrows -->
+  <line x1="160" y1="96" x2="198" y2="96" stroke="#54718a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <line x1="325" y1="96" x2="363" y2="96" stroke="#54718a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <line x1="160" y1="286" x2="198" y2="286" stroke="#54718a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <line x1="325" y1="286" x2="363" y2="286" stroke="#54718a" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- Center label -->
+  <text x="260" y="196" text-anchor="middle" font-size="13" font-weight="bold" fill="#0e3a5d">AESE Lab</text>
+  <text x="260" y="212" text-anchor="middle" font-size="10" fill="#54718a">Atmospheric Engineering &amp; Sustainable Energy</text>
+</svg>
