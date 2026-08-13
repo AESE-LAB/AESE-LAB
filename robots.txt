@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aese-lab.github.io/AESE-LAB/sitemap.xml
+Sitemap: https://aese-lab.github.io/sitemap.xml
