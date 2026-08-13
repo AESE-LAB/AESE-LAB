@@ -459,6 +459,7 @@ dl.info-list dd { color: var(--ink-soft); }
 
 /* ---------- Contact / map ---------- */
 .contact-box { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow); }
+.grid-2.loc-grid { grid-template-columns: 0.8fr 1.2fr; }
 
 /* ---------- Footer ---------- */
 footer.site-footer {
@@ -559,7 +560,7 @@ footer .copyright { border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top
   .menu-btn { display: block; }
 }
 @media (max-width: 600px) {
-  .grid-2, .grid-3, .grid-4, .stats, footer .foot-grid { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .grid-4, .stats, footer .foot-grid, .grid-2.loc-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 1.6rem; }
   .pub-item { grid-template-columns: 1fr; }
   .pub-item .pub-no { display: none; }
